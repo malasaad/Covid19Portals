@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>jQuery checkBo Plugin Examples</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="src/css/checkBo.css?v2" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="src/js/checkBo.js?v2"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+  .container { margin: 150px auto; }
+  </style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/form/jQuery-Plugin-For-Animated-Custom-Checkboxes-Radio-Buttons-checkBo.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery checkBo Plugin Examples</h1>
+  <form>
+    <h3>Checkboxes</h3>
+    <ul class="list-unstyled">
+      <li>
+        <label class="cb-checkbox cb-sm">
+          <input type="checkbox" />
+          Small Checkbox </label>
+      </li>
+      <li>
+        <label class="cb-checkbox">
+          <input type="checkbox" />
+          Default Checkbox </label>
+      </li>
+      <li>
+        <label class="cb-checkbox cb-md">
+          <input type="checkbox" />
+          Medium Checkbox </label>
+      </li>
+      <li>
+        <label class="cb-checkbox cb-lg">
+          <input type="checkbox" />
+          Large Checkbox </label>
+      </li>
+    </ul>
+    <h3>Radio buttons</h3>
+    <ul class="list-unstyled">
+      <li>
+        <label class="cb-radio cb-sm">
+          <input type="radio" />
+          Small Radio </label>
+      </li>
+      <li>
+        <label class="cb-radio">
+          <input type="radio" />
+          Default Radio </label>
+      </li>
+      <li>
+        <label class="cb-radio cb-md">
+          <input type="radio" />
+          Medium Radio </label>
+      </li>
+      <li>
+        <label class="cb-radio cb-lg">
+          <input type="radio" />
+          Large Radio </label>
+      </li>
+    </ul>
+    <h3>Check all with one click</h3>
+    <table class="table table-bordered table-striped">
+    <tr>
+        <th style="width: 110px;">
+            <label class="cb-checkbox m-0" id="check-all">
+                <input type="checkbox" name="check-all" />
+                Check All
+            </label>
+        </th>
+        <th class="text-center">Number</th>
+      </tr>
+    <tr class="checkbox-row">
+        <td><label class="cb-checkbox m-0"><input type="checkbox"  name="a" /> ABCD</label></td>
+        <td class="text-center">#1234</td>
+      </tr>
+    <tr class="checkbox-row">
+        <td><label class="cb-checkbox m-0"><input type="checkbox"  name="a" /> EFGH</label></td>
+        <td class="text-center">#5678</td>
+      </tr>
+    <tr class="checkbox-row">
+        <td><label class="cb-checkbox m-0"><input type="checkbox"  name="a" /> IJKL</label></td>
+        <td class="text-center">#9010</td>
+      </tr>
+</table>
+<h3>Show</h3>
+<label class="cb-radio" data-show="#block1">
+            <input type="radio" name="radio-show" />
+            Show Block #1
+        </label><div class="well is-hidden" id="block1">Block #1</div>
+        <h3>Hide</h3>
+<label class="cb-radio" data-hide="#block2">
+            <input type="radio" name="radio-hide" />
+            Hide Block #2
+        </label><div class="well" id="block2">Block #3</div>
+  <h3>Switch</h3>
+  <div class="cb-switcher-group">
+ <span class="cb-state">OFF</span>
+ <div class="cb-switcher">
+  <label class="inner-switcher"><input type="checkbox"/></label>
+ </div>
+ <span class="cb-state">ON</span>
+</div>
+<div class="cb-switcher">
+ <label class="inner-switcher">
+  <input type="checkbox" data-state-on="ON" data-state-off="OFF"/>
+ </label>
+ <span class="cb-state">ON</span>
+</div>
+<div class="cb-switcher">
+ <label class="inner-switcher">
+  <input type="checkbox" checked data-state-on="ON" data-state-off="OFF"/>
+ </label>
+ <span class="cb-state">ON</span>
+</div>
+
+  </form>
+
+  <script>
+
+    $(document).ready(function(){
+      $('form').checkBo({checkAllButton:"#check-all",checkAllTarget:".checkbox-row",checkAllTextDefault:"Check All",checkAllTextToggle:"Un-check All"});
+    });
+
+  </script> <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+
+</div>
+</body>
+</html>
